@@ -1,0 +1,19 @@
+developer:
+  model:
+    max_tokens: null
+    name: llama3.2:3b
+    provider: ollama
+    temperature: 0.7
+knowledge:
+  sources:
+  - name: test_knowledge
+    path: C:\AIOS\test_knowledge.txt
+    type: document
+model:
+  max_tokens: null
+  name: llama3.2:3b
+  provider: ollama
+  temperature: 0.7
+name: aios-app
+workflow:
+  name: chatbot

@@ -1,0 +1,14 @@
+name: {{project_name}}
+
+model:
+  provider: mock
+  name: default
+
+workflow:
+  name: chatbot
+
+# Knowledge sources configuration (optional)
+# knowledge:
+#   - name: company_docs
+#     type: document
+#     path: knowledge/company_docs.txt

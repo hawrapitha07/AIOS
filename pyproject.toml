@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aios"
+description = "AI Application Development Operating Environment"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "AIOS Developer", email = "developer@example.com"}
+]
+keywords = ["ai", "workflow", "llm", "chatbot", "agents"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+# Dependencies
+dependencies = [
+    "typer[all]>=0.9.0",
+    "rich>=13.0.0",
+    "pyyaml>=6.0",
+    "pydantic>=2.0",
+    "python-dotenv>=1.0.0",
+]
+
+# Optional dependencies
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.20.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+
+# OpenAI provider (optional)
+openai = [
+    "openai>=1.0.0",
+]
+
+# Ollama provider (optional)
+ollama = [
+    "ollama>=0.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/example/aios"
+Documentation = "https://github.com/example/aios/blob/main/README.md"
+Repository = "https://github.com/example/aios"
+Issues = "https://github.com/example/aios/issues"
+
+[project.scripts]
+aios = "aios.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["aios"]
+include = ["aios*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]

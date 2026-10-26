@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+aios/aios.egg-info/PKG-INFO
+aios/aios.egg-info/SOURCES.txt
+aios/aios.egg-info/dependency_links.txt
+aios/aios.egg-info/entry_points.txt
+aios/aios.egg-info/requires.txt
+aios/aios.egg-info/top_level.txt
+tests/test_cli.py
+tests/test_config.py
+tests/test_developer.py
+tests/test_developer_tool.py
+tests/test_models.py
+tests/test_ollama.py
+tests/test_workflows.py
